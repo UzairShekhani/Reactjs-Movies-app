@@ -59,6 +59,47 @@
   .search-bar button:hover {
     background-color: #000000;
   }
+
+  .card-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  
+  .custom-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* Details button */
+  .custom-btn.details {
+    background: linear-gradient(135deg, #6c63ff, #3f3dff);
+    color: white;
+  }
+  .custom-btn.details:hover {
+    background: linear-gradient(135deg, #4a46ff, #2e2bff);
+    transform: scale(1.05);
+  }
+  
+  /* Favorite button */
+  .custom-btn.favorite {
+    background: linear-gradient(135deg, #ffa500, #ff7b00);
+    color: white;
+  }
+  .custom-btn.favorite:hover {
+    background: linear-gradient(135deg, #e69500, #cc6a00);
+    transform: scale(1.05);
+  }
+  
   
   /* Movie Grid */
   .movie-grid {
